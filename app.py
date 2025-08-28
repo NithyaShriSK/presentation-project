@@ -45,14 +45,14 @@ Extracurricular = {"Yes": 1, "No": 0}
 gender_map = {"Male": 1, "Female": 0}
 
 features = np.array([[
+    gender_map[Gender],
+    Study_Hours_per_Week,
+    Attendance_Rate,
+    Past_Exam_Scores,
     Parental[parental_education_level],
     Internet[Internet_Access_at_Home],
     Extracurricular[Extracurricular_Activities],
-    gender_map[Gender],
-    Study_Hours_per_Week,
-    Past_Exam_Scores,
-    Final_Exam_Scores,
-    Attendance_Rate
+    Final_Exam_Scores
 ]])
 
 # Prediction
