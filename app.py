@@ -66,6 +66,9 @@ features = np.array([[
 
 if st.button("Result"):
     prediction = model.predict(features)
-    st.success(f"Result(Pass/Fail): {prediction[0]:,.2f}")
+    if(prediction==1):
+        st.success(f"Result(Pass/Fail): {"Pass"}")
+    else:
+        st.success(f"Result(Pass/Fail): {"Fail"}")
     
     
